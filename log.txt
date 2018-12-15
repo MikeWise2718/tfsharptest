@@ -1,0 +1,955 @@
+Microsoft Windows [Version 10.0.17763.107]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\mike>d:
+
+D:\>cd transfer
+
+D:\transfer>nuget
+'nuget' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\transfer>nuget
+NuGet Version: 4.8.1.5435
+usage: NuGet <command> [args] [options]
+Type 'NuGet help <command>' for help on a specific command.
+
+Available commands:
+
+ add         Adds the given package to a hierarchical source. http sources are not supported. For more info, goto https://docs.nuget.org/consume/command-line-reference#add-command.
+
+ config      Gets or sets NuGet config values.
+
+ delete      Deletes a package from the server.
+
+ help (?)    Displays general help information and help information about other commands.
+
+ init        Adds all the packages from the <srcPackageSourcePath> to the hierarchical <destPackageSourcePath>. http feeds are not supported. For more info, goto https://docs.nuget.org/consume/command-line-reference#init-command.
+
+ install     Installs a package using the specified sources. If no sources are specified, all sources defined in the NuGet configuration file are used. If the configuration file specifies no sources, uses the default NuGet feed.
+
+ list        Displays a list of packages from a given source. If no sources are specified, all sources defined in %AppData%\NuGet\NuGet.config are used. If NuGet.config specifies no sources, uses the default NuGet feed.
+
+ locals      Clears or lists local NuGet resources such as http requests cache, temp cache or machine-wide global packages folder.
+
+ pack        Creates a NuGet package based on the specified nuspec or project file.
+
+ push        Pushes a package to the server and publishes it.
+             NuGet's default configuration is obtained by loading %AppData%\NuGet\NuGet.config, then loading any nuget.config or .nuget\nuget.config starting from root of drive and ending in current directory.
+
+ restore     Restores NuGet packages.
+
+ setApiKey   Saves an API key for a given server URL. When no URL is provided API key is saved for the NuGet gallery.
+
+ sign        Signs a NuGet package with the specified certificate.
+
+ sources     Provides the ability to manage list of sources located in %AppData%\NuGet\NuGet.config
+
+ spec        Generates a nuspec for a new package. If this command is run in the same folder as a project file (.csproj, .vbproj, .fsproj), it will create a tokenized nuspec file.
+
+ update      Update packages to latest available versions. This command also updates NuGet.exe itself.
+
+ verify      Verifies a signed NuGet package.
+
+For more information, visit http://docs.nuget.org/docs/reference/command-line-reference
+
+D:\transfer>nuget install tensorflowsharp
+Feeds used:
+  https://api.nuget.org/v3/index.json
+  C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
+Installing package 'tensorflowsharp' to 'D:\transfer'.
+  GET https://api.nuget.org/v3/registration3-gz-semver2/tensorflowsharp/index.json
+  OK https://api.nuget.org/v3/registration3-gz-semver2/tensorflowsharp/index.json 475ms
+
+
+Attempting to gather dependency information for package 'tensorflowsharp.1.12.0' with respect to project 'D:\transfer', targeting 'Any,Version=v0.0'
+Gathering dependency information took 563.79 ms
+Attempting to resolve dependencies for package 'tensorflowsharp.1.12.0' with DependencyBehavior 'Lowest'
+Resolving dependency information took 0 ms
+Resolving actions to install package 'tensorflowsharp.1.12.0'
+Resolved actions to install package 'tensorflowsharp.1.12.0'
+Retrieving package 'System.ValueTuple 4.5.0' from 'nuget.org'.
+Retrieving package 'TensorFlowSharp 1.12.0' from 'nuget.org'.
+  GET https://api.nuget.org/v3-flatcontainer/tensorflowsharp/1.12.0/tensorflowsharp.1.12.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/tensorflowsharp/1.12.0/tensorflowsharp.1.12.0.nupkg 441ms
+  OK https://api.nuget.org/v3-flatcontainer/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg 474ms
+Installing TensorFlowSharp 1.12.0.
+Installing System.ValueTuple 4.5.0.
+Adding package 'System.ValueTuple.4.5.0' to folder 'D:\transfer'
+Added package 'System.ValueTuple.4.5.0' to folder 'D:\transfer'
+Successfully installed 'System.ValueTuple 4.5.0' to D:\transfer
+Adding package 'TensorFlowSharp.1.12.0' to folder 'D:\transfer'
+Added package 'TensorFlowSharp.1.12.0' to folder 'D:\transfer'
+Successfully installed 'TensorFlowSharp 1.12.0' to D:\transfer
+Executing nuget actions took 19.7 sec
+
+D:\transfer>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer
+
+15-Dec-18  12:38    <DIR>          .
+15-Dec-18  12:38    <DIR>          ..
+18-Sep-18  20:04    <DIR>          2018-06-20_microsoft
+08-Mar-18  12:03    <DIR>          audi
+12-Apr-18  09:09    <DIR>          audi - save
+09-May-18  23:11    <DIR>          avro
+18-Oct-17  10:57    <DIR>          Azure Icons
+09-Jul-18  20:55    <DIR>          Azure-IoT-SSS-Samples-DeviceConnectivity
+12-Mar-18  13:27    <DIR>          azurecrtest
+07-Dec-18  20:47    <DIR>          B99
+24-Oct-16  12:02    <DIR>          badsharking
+04-Apr-17  09:59    <DIR>          Biglearn
+30-Mar-17  09:08    <DIR>          Biglearn20170330
+30-Jun-18  17:33    <DIR>          Bld
+15-Nov-16  18:05    <DIR>          bot-education
+31-Dec-16  15:43    <DIR>          bot-intro
+23-Sep-17  10:46    <DIR>          Buildings
+08-Oct-17  15:25    <DIR>          CodeBoxTfs
+24-Oct-16  12:02    <DIR>          deshark
+10-Jan-17  17:53    <DIR>          ezdicom
+07-Dec-18  08:57    <DIR>          FilesMLADSfall2018Trip-after
+06-Dec-18  08:12    <DIR>          FilesMLADSfall2018Trip-after1
+24-Oct-16  12:02    <DIR>          FirstExternalPreview
+15-Nov-16  14:37       224,657,408 FraKlinikMikeAnData.iso
+22-Mar-17  10:35    <DIR>          fuselogs
+26-May-17  11:41    <DIR>          gephi
+31-Oct-18  21:02    <DIR>          ggplot2
+08-Oct-17  17:38    <DIR>          gittest
+28-Jun-18  19:09    <DIR>          indigo
+22-Mar-18  16:37    <DIR>          iot-edge
+03-Sep-18  16:38    <DIR>          LabelImg
+09-Oct-18  04:15    <DIR>          labelimg1_7
+26-Dec-17  13:29    <DIR>          MEG
+25-May-17  09:00    <DIR>          midwest-map-population
+01-Jun-17  09:12    <DIR>          mikrotik
+23-Sep-18  14:38    <DIR>          MNEPython
+08-Apr-18  14:00    <DIR>          models
+29-Mar-17  13:04    <DIR>          model_1223_0129_Small2
+25-Sep-18  07:51    <DIR>          mpl
+24-Oct-16  12:02    <DIR>          neural-networks-and-deep-learning
+25-Sep-18  07:48    <DIR>          New folder
+25-Dec-17  16:53    <DIR>          notebooks
+25-Apr-18  17:50    <DIR>          odmodels
+12-Sep-17  09:37    <DIR>          oldstuff
+26-May-18  22:41    <DIR>          openalpr
+08-Oct-18  12:36                27 package-lock.json
+13-Apr-18  16:49    <DIR>          Pbi
+09-Dec-18  13:04    <DIR>          Pdata
+24-Oct-16  12:02    <DIR>          R-host
+21-Sep-18  21:53    <DIR>          ReadCsv
+24-Oct-16  12:02    <DIR>          REAF-EnergyPrediction
+08-Nov-17  10:15    <DIR>          recipes
+26-May-18  11:27    <DIR>          Reolink Client Windows v7.2.2.18
+10-May-18  09:10    <DIR>          repsol
+24-Oct-16  12:02    <DIR>          rgl
+06-Sep-17  05:21    <DIR>          RickUmaliVanityWebsite
+20-Dec-17  13:24    <DIR>          RMIEnergyFinanicalModeller
+06-Dec-18  10:19    <DIR>          roboexper
+04-Jan-17  16:46    <DIR>          RTVS
+24-Oct-16  12:02    <DIR>          RTVS-github
+11-Jul-18  10:36    <DIR>          safe
+24-Oct-16  12:02    <DIR>          shiny-master
+04-Jan-17  10:35    <DIR>          shiny13
+17-Sep-18  09:27    <DIR>          SmartSpacesMgmtApp
+11-Jul-18  08:37    <DIR>          SmartSpacesMgmtAppOld
+14-Apr-16  12:46               542 state1.Rdata
+13-Aug-18  13:45    <DIR>          syslog
+15-Dec-18  12:38    <DIR>          System.ValueTuple.4.5.0
+25-Apr-18  10:06    <DIR>          tars
+12-May-18  15:22    <DIR>          temp
+15-Dec-18  12:38    <DIR>          TensorFlowSharp.1.12.0
+24-Oct-16  12:02    <DIR>          TestBuild
+09-Jun-06  20:40       100,000,000 text8.txt
+06-Sep-17  17:08    <DIR>          Tilde
+30-Oct-18  20:23    <DIR>          TurboSquid
+17-Mar-18  15:23    <DIR>          unifi
+03-Nov-16  10:44    <DIR>          ut
+27-Sep-18  08:57    <DIR>          va2py
+09-Oct-18  03:56    <DIR>          VoTT
+19-Dec-17  16:23    <DIR>          vslogs
+29-Mar-17  12:56    <DIR>          x64
+               4 File(s)    324,657,977 bytes
+              77 Dir(s)  207,879,385,088 bytes free
+
+D:\transfer>mkdir tensorflowsharp
+
+D:\transfer>cd tensorflowsharp
+
+D:\transfer\tensorflowsharp>nuget install tensorflowsharp
+Feeds used:
+  https://api.nuget.org/v3/index.json
+  C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
+Installing package 'tensorflowsharp' to 'D:\transfer\tensorflowsharp'.
+  CACHE https://api.nuget.org/v3/registration3-gz-semver2/tensorflowsharp/index.json
+
+
+Attempting to gather dependency information for package 'tensorflowsharp.1.12.0' with respect to project 'D:\transfer\tensorflowsharp', targeting 'Any,Version=v0.0'
+Gathering dependency information took 77.02 ms
+Attempting to resolve dependencies for package 'tensorflowsharp.1.12.0' with DependencyBehavior 'Lowest'
+Resolving dependency information took 0 ms
+Resolving actions to install package 'tensorflowsharp.1.12.0'
+Resolved actions to install package 'tensorflowsharp.1.12.0'
+Retrieving package 'System.ValueTuple 4.5.0' from 'nuget.org'.
+Retrieving package 'TensorFlowSharp 1.12.0' from 'nuget.org'.
+Adding package 'System.ValueTuple.4.5.0' to folder 'D:\transfer\tensorflowsharp'
+Added package 'System.ValueTuple.4.5.0' to folder 'D:\transfer\tensorflowsharp'
+Successfully installed 'System.ValueTuple 4.5.0' to D:\transfer\tensorflowsharp
+Adding package 'TensorFlowSharp.1.12.0' to folder 'D:\transfer\tensorflowsharp'
+Added package 'TensorFlowSharp.1.12.0' to folder 'D:\transfer\tensorflowsharp'
+Successfully installed 'TensorFlowSharp 1.12.0' to D:\transfer\tensorflowsharp
+Executing nuget actions took 854.77 ms
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:39    <DIR>          .
+15-Dec-18  12:39    <DIR>          ..
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+               0 File(s)              0 bytes
+               4 Dir(s)  207,384,244,224 bytes free
+
+D:\transfer\tensorflowsharp>notepad tftest
+
+D:\transfer\tensorflowsharp>dotnet build tftest.cs
+
+Welcome to .NET Core!
+---------------------
+Learn more about .NET Core: https://aka.ms/dotnet-docs
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous and doesn't include command-line arguments. The data is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+ASP.NET Core
+------------
+Successfully installed the ASP.NET Core HTTPS Development Certificate.
+To trust the certificate run 'dotnet dev-certs https --trust' (Windows and macOS only). For establishing trust on other platforms refer to the platform specific documentation.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+D:\transfer\tensorflowsharp\tftest.cs(1,1): error MSB4025: The project file could not be loaded. Data at the root level is invalid. Line 1, position 1.
+
+Build FAILED.
+
+D:\transfer\tensorflowsharp\tftest.cs(1,1): error MSB4025: The project file could not be loaded. Data at the root level is invalid. Line 1, position 1.
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.33
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:45    <DIR>          .
+15-Dec-18  12:45    <DIR>          ..
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:45               591 tftest
+15-Dec-18  12:45               591 tftest.cs
+               2 File(s)          1,182 bytes
+               4 Dir(s)  207,879,385,088 bytes free
+
+D:\transfer\tensorflowsharp>dotnet new tftest
+Getting ready...
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+  -n, --name          The name for the output being created. If no name is specified, the name of the current directory is used.
+  -o, --output        Location to place the generated output.
+  -i, --install       Installs a source or a template pack.
+  -u, --uninstall     Uninstalls a source or a template pack.
+  --nuget-source      Specifies a NuGet source to use during install.
+  --type              Filters templates based on available types. Predefined values are "project", "item" or "other".
+  --force             Forces content to be generated even if it would change existing files.
+  -lang, --language   Filters templates based on language and specifies the language of the template to create.
+
+
+No templates matched the input template name: tftest.
+
+Templates                                         Short Name         Language          Tags
+----------------------------------------------------------------------------------------------------------------------------
+Console Application                               console            [C#], F#, VB      Common/Console
+Class library                                     classlib           [C#], F#, VB      Common/Library
+Unit Test Project                                 mstest             [C#], F#, VB      Test/MSTest
+xUnit Test Project                                xunit              [C#], F#, VB      Test/xUnit
+Razor Page                                        page               [C#]              Web/ASP.NET
+MVC ViewImports                                   viewimports        [C#]              Web/ASP.NET
+MVC ViewStart                                     viewstart          [C#]              Web/ASP.NET
+ASP.NET Core Empty                                web                [C#], F#          Web/Empty
+ASP.NET Core Web App (Model-View-Controller)      mvc                [C#], F#          Web/MVC
+ASP.NET Core Web App                              razor              [C#]              Web/MVC/Razor Pages
+ASP.NET Core with Angular                         angular            [C#]              Web/MVC/SPA
+ASP.NET Core with React.js                        react              [C#]              Web/MVC/SPA
+ASP.NET Core with React.js and Redux              reactredux         [C#]              Web/MVC/SPA
+Razor Class Library                               razorclasslib      [C#]              Web/Razor/Library/Razor Class Library
+ASP.NET Core Web API                              webapi             [C#], F#          Web/WebAPI
+global.json file                                  globaljson                           Config
+NuGet Config                                      nugetconfig                          Config
+Web Config                                        webconfig                            Config
+Solution File                                     sln                                  Solution
+
+Examples:
+    dotnet new mvc --auth Individual
+    dotnet new classlib --framework netcoreapp2.1
+    dotnet new --help
+
+D:\transfer\tensorflowsharp>dotnet new console
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on D:\transfer\tensorflowsharp\tensorflowsharp.csproj...
+  Restoring packages for D:\transfer\tensorflowsharp\tensorflowsharp.csproj...
+  Generating MSBuild file D:\transfer\tensorflowsharp\obj\tensorflowsharp.csproj.nuget.g.props.
+  Generating MSBuild file D:\transfer\tensorflowsharp\obj\tensorflowsharp.csproj.nuget.g.targets.
+  Restore completed in 198.03 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+
+Restore succeeded.
+
+
+D:\transfer\tensorflowsharp>ls
+Program.cs  System.ValueTuple.4.5.0  TensorFlowSharp.1.12.0  obj  tensorflowsharp.csproj  tftest  tftest.cs
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:47    <DIR>          .
+15-Dec-18  12:47    <DIR>          ..
+15-Dec-18  12:47    <DIR>          obj
+15-Dec-18  12:47               197 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:47               178 tensorflowsharp.csproj
+15-Dec-18  12:45               591 tftest
+15-Dec-18  12:45               591 tftest.cs
+               4 File(s)          1,557 bytes
+               5 Dir(s)  207,879,331,840 bytes free
+
+D:\transfer\tensorflowsharp>nptepad Program.cs
+'nptepad' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\transfer\tensorflowsharp>notepad Program.cs
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 51.55 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+tftest.cs(1,7): error CS1001: Identifier expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,7): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,51): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,53): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(18,1): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+
+Build FAILED.
+
+tftest.cs(1,7): error CS1001: Identifier expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,7): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,51): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,53): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(18,1): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+    0 Warning(s)
+    26 Error(s)
+
+Time Elapsed 00:00:03.55
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 39.41 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+tftest.cs(1,7): error CS1001: Identifier expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,7): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,51): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,53): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(18,1): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+
+Build FAILED.
+
+tftest.cs(1,7): error CS1001: Identifier expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,7): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,20): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1002: ; expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(1,37): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(7,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(12,51): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,13): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1031: Type expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS8124: Tuple must contain at least two elements. [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1026: ) expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,23): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,34): error CS0116: A namespace cannot directly contain members such as fields or methods [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(17,53): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+tftest.cs(18,1): error CS1022: Type or namespace definition, or end-of-file expected [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+    0 Warning(s)
+    26 Error(s)
+
+Time Elapsed 00:00:01.25
+
+D:\transfer\tensorflowsharp>del tftest.cs
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:51    <DIR>          .
+15-Dec-18  12:51    <DIR>          ..
+15-Dec-18  12:48    <DIR>          bin
+15-Dec-18  12:48    <DIR>          obj
+15-Dec-18  12:51               197 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:47               178 tensorflowsharp.csproj
+15-Dec-18  12:45               591 tftest
+               3 File(s)            966 bytes
+               6 Dir(s)  207,879,217,152 bytes free
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 39.88 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+  tensorflowsharp -> D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1\tensorflowsharp.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.93
+
+D:\transfer\tensorflowsharp>dotnet run
+Hello World!
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 52.1 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+Program.cs(10,38): error CS0246: The type or namespace name 'TFSession' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+
+Build FAILED.
+
+Program.cs(10,38): error CS0246: The type or namespace name 'TFSession' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.15
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 59.46 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+Program.cs(11,38): error CS0246: The type or namespace name 'TFSession' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+
+Build FAILED.
+
+Program.cs(11,38): error CS0246: The type or namespace name 'TFSession' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.23
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:51    <DIR>          .
+15-Dec-18  12:51    <DIR>          ..
+15-Dec-18  12:48    <DIR>          bin
+15-Dec-18  12:48    <DIR>          obj
+15-Dec-18  12:52               832 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:47               178 tensorflowsharp.csproj
+15-Dec-18  12:45               591 tftest
+               3 File(s)          1,601 bytes
+               6 Dir(s)  207,879,192,576 bytes free
+
+D:\transfer\tensorflowsharp>notepad tensorflowsharp.csproj
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 45.22 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+Program.cs(2,7): error CS0246: The type or namespace name 'tensorflow' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+
+Build FAILED.
+
+Program.cs(2,7): error CS0246: The type or namespace name 'tensorflow' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.19
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 45.5 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+Program.cs(2,7): error CS0246: The type or namespace name 'TensorFlow' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+
+Build FAILED.
+
+Program.cs(2,7): error CS0246: The type or namespace name 'TensorFlow' could not be found (are you missing a using directive or an assembly reference?) [D:\transfer\tensorflowsharp\tensorflowsharp.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.14
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restoring packages for D:\transfer\tensorflowsharp\tensorflowsharp.csproj...
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1101: Unable to find package Microsoft.TensorFlowSharp. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org
+  Generating MSBuild file D:\transfer\tensorflowsharp\obj\tensorflowsharp.csproj.nuget.g.props.
+  Restore failed in 927.26 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+
+Build FAILED.
+
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1101: Unable to find package Microsoft.TensorFlowSharp. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.46
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:55    <DIR>          .
+15-Dec-18  12:55    <DIR>          ..
+15-Dec-18  12:48    <DIR>          bin
+15-Dec-18  12:57    <DIR>          obj
+15-Dec-18  12:54               827 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:56               297 tensorflowsharp.csproj
+               2 File(s)          1,124 bytes
+               6 Dir(s)  207,879,188,480 bytes free
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:55    <DIR>          .
+15-Dec-18  12:55    <DIR>          ..
+15-Dec-18  12:48    <DIR>          bin
+15-Dec-18  12:57    <DIR>          obj
+15-Dec-18  12:54               827 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:57               286 tensorflowsharp.csproj
+               2 File(s)          1,113 bytes
+               6 Dir(s)  207,879,188,480 bytes free
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restoring packages for D:\transfer\tensorflowsharp\tensorflowsharp.csproj...
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1101: Unable to find package Microsoft.TensorFlowSharp. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org
+  Restore failed in 877.37 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+
+Build FAILED.
+
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1101: Unable to find package Microsoft.TensorFlowSharp. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages, nuget.org
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.48
+
+D:\transfer\tensorflowsharp>dir TensorFlowSharp.1.12.0
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp\TensorFlowSharp.1.12.0
+
+15-Dec-18  12:39    <DIR>          .
+15-Dec-18  12:39    <DIR>          ..
+05-Dec-18  19:14             9,470 .signature.p7s
+15-Dec-18  12:39    <DIR>          build
+15-Dec-18  12:39    <DIR>          lib
+15-Dec-18  12:39    <DIR>          runtimes
+15-Dec-18  12:39        84,558,299 TensorFlowSharp.1.12.0.nupkg
+               2 File(s)     84,567,769 bytes
+               5 Dir(s)  207,879,188,480 bytes free
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restoring packages for D:\transfer\tensorflowsharp\tensorflowsharp.csproj...
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108: Cycle detected.
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108:   tensorflowsharp -> TensorFlowSharp (>= 1.12.0).
+  Restore failed in 168.64 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+
+Build FAILED.
+
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108: Cycle detected.
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108:   tensorflowsharp -> TensorFlowSharp (>= 1.12.0).
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.83
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restoring packages for D:\transfer\tensorflowsharp\tensorflowsharp.csproj...
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108: Cycle detected.
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108:   tensorflowsharp -> TensorFlowSharp (>= 1.12.0).
+  Restore failed in 187.84 ms for D:\transfer\tensorflowsharp\tensorflowsharp.csproj.
+
+Build FAILED.
+
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108: Cycle detected.
+D:\transfer\tensorflowsharp\tensorflowsharp.csproj : error NU1108:   tensorflowsharp -> TensorFlowSharp (>= 1.12.0).
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.91
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  12:55    <DIR>          .
+15-Dec-18  12:55    <DIR>          ..
+15-Dec-18  12:48    <DIR>          bin
+15-Dec-18  12:58    <DIR>          obj
+15-Dec-18  12:58               823 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:57               276 tensorflowsharp.csproj
+               2 File(s)          1,099 bytes
+               6 Dir(s)  207,879,188,480 bytes free
+
+D:\transfer\tensorflowsharp>mv tensorflowsharp.csproj tftest.csproj
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restoring packages for D:\transfer\tensorflowsharp\tftest.csproj...
+  Generating MSBuild file D:\transfer\tensorflowsharp\obj\tftest.csproj.nuget.g.props.
+  Generating MSBuild file D:\transfer\tensorflowsharp\obj\tftest.csproj.nuget.g.targets.
+  Restore completed in 192.74 ms for D:\transfer\tensorflowsharp\tftest.csproj.
+  tftest -> D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1\tftest.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.54
+
+D:\transfer\tensorflowsharp>dotnet run
+
+Unhandled Exception: System.TypeLoadException: Could not load type 'TensorFlow.TFSession' from assembly 'tensorflowsharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at tfsharptest.Program.Main(String[] args)
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  13:02    <DIR>          .
+15-Dec-18  13:02    <DIR>          ..
+15-Dec-18  12:48    <DIR>          bin
+15-Dec-18  13:02    <DIR>          obj
+15-Dec-18  12:58               823 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:57               276 tftest.csproj
+               2 File(s)          1,099 bytes
+               6 Dir(s)  207,879,045,120 bytes free
+
+D:\transfer\tensorflowsharp>cd bin
+
+D:\transfer\tensorflowsharp\bin>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp\bin
+
+15-Dec-18  12:48    <DIR>          .
+15-Dec-18  12:48    <DIR>          ..
+15-Dec-18  12:48    <DIR>          Debug
+               0 File(s)              0 bytes
+               3 Dir(s)  207,879,045,120 bytes free
+
+D:\transfer\tensorflowsharp\bin>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp\bin
+
+15-Dec-18  12:48    <DIR>          .
+15-Dec-18  12:48    <DIR>          ..
+15-Dec-18  12:48    <DIR>          Debug
+               0 File(s)              0 bytes
+               3 Dir(s)  207,879,045,120 bytes free
+
+D:\transfer\tensorflowsharp\bin>cd Debug
+
+D:\transfer\tensorflowsharp\bin\Debug>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp\bin\Debug
+
+15-Dec-18  12:48    <DIR>          .
+15-Dec-18  12:48    <DIR>          ..
+15-Dec-18  13:02    <DIR>          netcoreapp2.1
+               0 File(s)              0 bytes
+               3 Dir(s)  207,879,045,120 bytes free
+
+D:\transfer\tensorflowsharp\bin\Debug>cd netcoreapp2.1
+
+D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1
+
+15-Dec-18  13:02    <DIR>          .
+15-Dec-18  13:02    <DIR>          ..
+15-Dec-18  12:52               477 tensorflowsharp.deps.json
+15-Dec-18  12:52             4,608 tensorflowsharp.dll
+15-Dec-18  12:52               416 tensorflowsharp.pdb
+15-Dec-18  12:52               234 tensorflowsharp.runtimeconfig.dev.json
+15-Dec-18  12:52               154 tensorflowsharp.runtimeconfig.json
+15-Dec-18  13:02             2,418 tftest.deps.json
+15-Dec-18  13:02             5,120 tftest.dll
+15-Dec-18  13:02               720 tftest.pdb
+15-Dec-18  13:02               234 tftest.runtimeconfig.dev.json
+15-Dec-18  13:02               154 tftest.runtimeconfig.json
+              10 File(s)         14,535 bytes
+               2 Dir(s)  207,879,045,120 bytes free
+
+D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1>cd ..
+
+D:\transfer\tensorflowsharp\bin\Debug>dotnet run
+Couldn't find a project to run. Ensure a project exists in D:\transfer\tensorflowsharp\bin\Debug, or pass the path to the project using --project.
+
+D:\transfer\tensorflowsharp\bin\Debug>cd ..
+
+D:\transfer\tensorflowsharp\bin>cd ..
+
+D:\transfer\tensorflowsharp>dotnet run
+
+Unhandled Exception: System.TypeLoadException: Could not load type 'TensorFlow.TFSession' from assembly 'tensorflowsharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at tfsharptest.Program.Main(String[] args)
+
+D:\transfer\tensorflowsharp>dir
+ Volume in drive D is Data Disk
+ Volume Serial Number is 18EC-1C8D
+
+ Directory of D:\transfer\tensorflowsharp
+
+15-Dec-18  13:02    <DIR>          .
+15-Dec-18  13:02    <DIR>          ..
+15-Dec-18  12:48    <DIR>          bin
+15-Dec-18  13:02    <DIR>          obj
+15-Dec-18  12:58               823 Program.cs
+15-Dec-18  12:39    <DIR>          System.ValueTuple.4.5.0
+15-Dec-18  12:39    <DIR>          TensorFlowSharp.1.12.0
+15-Dec-18  12:57               276 tftest.csproj
+               2 File(s)          1,099 bytes
+               6 Dir(s)  207,877,246,976 bytes free
+
+D:\transfer\tensorflowsharp>notepad tftest.csproj
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 38.63 ms for D:\transfer\tensorflowsharp\tftest.csproj.
+  tftest -> D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1\tftest.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.23
+
+D:\transfer\tensorflowsharp>dotnet run
+
+Unhandled Exception: System.TypeLoadException: Could not load type 'TensorFlow.TFSession' from assembly 'tensorflowsharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at tfsharptest.Program.Main(String[] args)
+
+D:\transfer\tensorflowsharp>notepad tftest.csproj
+
+D:\transfer\tensorflowsharp>dotnet build
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 38.94 ms for D:\transfer\tensorflowsharp\tftest.csproj.
+  tftest -> D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1\tftest.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.23
+
+D:\transfer\tensorflowsharp>dotnet run
+
+Unhandled Exception: System.TypeLoadException: Could not load type 'TensorFlow.TFSession' from assembly 'tensorflowsharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at tfsharptest.Program.Main(String[] args)
+
+D:\transfer\tensorflowsharp>dotnet build --runtime win10-x64
+Microsoft (R) Build Engine version 15.7.179.6572 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restoring packages for D:\transfer\tensorflowsharp\tftest.csproj...
+  Installing runtime.win-x64.Microsoft.NETCore.DotNetAppHost 2.1.1.
+  Installing runtime.win-x64.Microsoft.NETCore.DotNetHostResolver 2.1.1.
+  Installing runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy 2.1.1.
+  Installing runtime.win-x64.Microsoft.NETCore.App 2.1.1.
+  Generating MSBuild file D:\transfer\tensorflowsharp\obj\tftest.csproj.nuget.g.props.
+  Generating MSBuild file D:\transfer\tensorflowsharp\obj\tftest.csproj.nuget.g.targets.
+  Restore completed in 7.11 sec for D:\transfer\tensorflowsharp\tftest.csproj.
+  tftest -> D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1\win10-x64\tftest.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:14.70
+
+D:\transfer\tensorflowsharp>dotnet run
+
+Unhandled Exception: System.TypeLoadException: Could not load type 'TensorFlow.TFSession' from assembly 'tensorflowsharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at tfsharptest.Program.Main(String[] args)
+
+D:\transfer\tensorflowsharp>dotnet run --runtime win10-x64
+
+Unhandled Exception: System.TypeLoadException: Could not load type 'TensorFlow.TFSession' from assembly 'tensorflowsharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at tfsharptest.Program.Main(String[] args)
+
+D:\transfer\tensorflowsharp>cd bin
+
+D:\transfer\tensorflowsharp\bin>cd Debug
+
+D:\transfer\tensorflowsharp\bin\Debug>cd netcoreapp2.1
+
+D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1>cd win10-x64
+
+D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1\win10-x64>tftest
+Hello World!
+2018-12-15 13:46:31.950668: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+a=2 b=3
+a+b=5
+a*b=6
+
+D:\transfer\tensorflowsharp\bin\Debug\netcoreapp2.1\win10-x64>
